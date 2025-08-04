@@ -53,7 +53,14 @@ def delete_task(task_id):
         print(f"Task {task_id} deleted.")
 
 
-
+def show_help():
+    print("""
+Usage:
+    python task_manager.py add "Task Title"
+    python task_manager.py view
+    python task_manager.py complete <task_id>
+    python task_manager.py delete <task_id>
+""")
 
 if __name__ == "__main__":
     import sys
