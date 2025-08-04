@@ -31,3 +31,23 @@ def view_tasks():
     for task in tasks:
         status = "✅" if task["completed"] else "❌"
         print(f"{task['id']}. {task['title']} - {status}")
+
+
+def complete_task(task_id):
+    tasks = load_tasks()
+    for task in tasks:
+        if task["id"] == task_id:
+            task["completed"] = True
+            save_tasks(tasks)
+            print(f"Task {task_id} marked as complete.")
+            return
+    print("Task not found.")
+
+def delete_task(task_id):
+    tasks = load_tasks()
+    new_tasks = [task for task in tasks if task["id"] != task_id]
+    if len(new_tasks) == len(tasks):
+        print("Task not found.")
+    else:
+        save_tasks(new_tasks)
+        print(f"Task {task_id} deleted.")
