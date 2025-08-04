@@ -51,3 +51,33 @@ def delete_task(task_id):
     else:
         save_tasks(new_tasks)
         print(f"Task {task_id} deleted.")
+
+
+
+
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) < 2:
+        show_help()
+    else:
+        command = sys.argv[1]
+        if command == "add":
+            if len(sys.argv) >= 3:
+                title = " ".join(sys.argv[2:])
+                add_task(title)
+            else:
+                print("Please provide a task title.")
+        elif command == "view":
+            view_tasks()
+        elif command == "complete":
+            if len(sys.argv) == 3 and sys.argv[2].isdigit():
+                complete_task(int(sys.argv[2]))
+            else:
+                print("Please provide a valid task ID.")
+        elif command == "delete":
+            if len(sys.argv) == 3 and sys.argv[2].isdigit():
+                delete_task(int(sys.argv[2]))
+            else:
+                print("Please provide a valid task ID.")
+        else:
+            show_help()
