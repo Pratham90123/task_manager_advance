@@ -2,7 +2,7 @@
 import json
 import os
 
-TASK_FILE="task.json"
+TASKS_FILE="task.json"
 
 def save_tasks(tasks):
     with open(TASKS_FILE, "w") as file:
@@ -29,7 +29,7 @@ def view_tasks():
         print("No tasks found.")
         return
     for task in tasks:
-        status = "✅" if task["completed"] else "❌"
+        status = "*" if task["completed"] else "x"
         print(f"{task['id']}. {task['title']} - {status}")
 
 

@@ -1,0 +1,9 @@
+- d28078e 2025-08-04 added README file
+- 4205510 2025-08-04 to find help
+- 22794b6 2025-08-04 cli functionalites
+- 1382b49 2025-08-04 to mark completed
+- 64de2d9 2025-08-04  to view tasks
+- 801ca64 2025-08-04 merged add-task
+- 2cab8fa 2025-08-04 to add and save  task
+- 875a191 2025-08-04 intialzed
+- d3d3e2d 2025-08-04 created taskmanager and task json file

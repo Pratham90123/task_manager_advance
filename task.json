@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "Read Python tutorial",
+        "completed": false
+    },
+    {
+        "id": 2,
+        "title": "Read Python tutorial 2",
+        "completed": true
+    },
+    {
+        "id": 3,
+        "title": "Read Python tutorial 3",
+        "completed": false
+    },
+    {
+        "id": 4,
+        "title": "Read Python tutorial 4",
+        "completed": false
+    }
+]
