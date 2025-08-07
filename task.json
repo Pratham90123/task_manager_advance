@@ -1,22 +1,22 @@
 [
     {
         "id": 1,
-        "title": "Read Python tutorial",
+        "title": "1st task",
         "completed": false
     },
     {
         "id": 2,
-        "title": "Read Python tutorial 2",
-        "completed": true
+        "title": "2st task",
+        "completed": false
     },
     {
         "id": 3,
-        "title": "Read Python tutorial 3",
+        "title": "3rd task",
         "completed": false
     },
     {
         "id": 4,
-        "title": "Read Python tutorial 4",
+        "title": "3rd task",
         "completed": false
     }
 ]
