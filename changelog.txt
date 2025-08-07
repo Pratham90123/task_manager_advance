@@ -1,3 +1,8 @@
+- 8e5c3b2 2025-08-07 added git delete_task fuctonalite
+- 90c3469 2025-08-07 created a readme.md file whit a description
+- 03c2655 2025-08-07 view task
+- 6c6d80d 2025-08-06 Add Task feature
+- d66c1bc 2025-08-04 created changle log and updated all logs
 - d28078e 2025-08-04 added README file
 - 4205510 2025-08-04 to find help
 - 22794b6 2025-08-04 cli functionalites
