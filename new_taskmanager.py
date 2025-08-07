@@ -42,7 +42,7 @@ def complete_task(task_id):
             return
     print("Task not found.")
 
-def delete_hhtask(task_id):
+def delete_task(task_id):
     tasks = load_tasks()
     new_tasks = [task for task in tasks if task["id"] != task_id]
     if len(new_tasks) == len(tasks):
