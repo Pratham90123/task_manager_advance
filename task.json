@@ -9,15 +9,5 @@
         "title": "2st task",
         "completed": false
     },
-    {
-        "id": 4,
-        "title": "3rd task",
-        "completed": false
-    },
-    {
-        "id": 4,
-        "title": "11 task hi",
-        "due_date": "2025-08-10",
-        "completed": false
-    }
+   
 ]
