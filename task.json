@@ -9,9 +9,5 @@
         "title": "2st task",
         "completed": false
     },
-    {
-        "id": 4,
-        "title": "3rd task",
-        "completed": false
-    }
+   
 ]

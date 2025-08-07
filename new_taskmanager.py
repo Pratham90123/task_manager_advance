@@ -8,12 +8,19 @@ def save_tasks(tasks):
         json.dump(tasks, file, indent=4)
 
 
-def add_task(title):
+def add_task(title, due_date=None):
     tasks = load_tasks()
     task_id = len(tasks) + 1
-    tasks.append({"id": task_id, "title": title, "completed": False})
+    tasks.append({
+        "id": task_id,
+        "title": title,
+        "due_date": due_date,
+        "completed": False
+    })
     save_tasks(tasks)
-    print(f"Task added: {title}")
+    print(f"Task added: {title} (Due: {due_date})")
+
+
 
 def load_tasks():
     if not os.path.exists(TASKS_FILE):
@@ -28,8 +35,10 @@ def view_tasks():
         print("No tasks found.")
         return
     for task in tasks:
-        status = "*" if task["completed"] else "x"
-        print(f"{task['id']}. {task['title']} - {status}")
+        status = "C" if task["completed"] else "X"
+        due = task.get("due_date", "No due date")
+        print(f"{task['id']}. {task['title']} - {status} (Due: {due})")
+
 
 
 def complete_task(task_id):
@@ -69,10 +78,12 @@ if __name__ == "__main__":
         command = sys.argv[1]
         if command == "add":
             if len(sys.argv) >= 3:
-                title = " ".join(sys.argv[2:])
-                add_task(title)
+                title = sys.argv[2]
+                due_date = sys.argv[3] if len(sys.argv) >= 4 else None
+                add_task(title, due_date)
             else:
-                print("Please provide a task title.")
+                print("Usage: python task_manager.py add \"Task Title\" [Due Date]")
+
         elif command == "view":
             view_tasks()
         elif command == "complete":
