@@ -1,3 +1,5 @@
+- 2f09f24 2025-08-08 Release v1.1
+- 5ea5619 2025-08-08 Update changelog for v1.1
 - 1dd3c70 2025-08-08 Release v1.1
 - 44804c7 2025-08-07 Merge pull request #2 from Pratham90123/feature/add_due_dates
 - 2c93b12 2025-08-07 Merge branch 'main' into feature/add_due_dates
