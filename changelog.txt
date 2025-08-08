@@ -1,3 +1,13 @@
+- 1dd3c70 2025-08-08 Release v1.1
+- 44804c7 2025-08-07 Merge pull request #2 from Pratham90123/feature/add_due_dates
+- 2c93b12 2025-08-07 Merge branch 'main' into feature/add_due_dates
+- 70a5570 2025-08-07 add due date
+- 02fbf21 2025-08-07 v1.0
+- ce7f239 2025-08-07 Merge branch 'delete-task'
+- 36c401d 2025-08-07 created a conflict in main branch
+- 7a586da 2025-08-07 created a conflit
+- 112e1f9 2025-08-07 Update task.json
+- 7b7f19e 2025-08-07 added changelog.txt file
 - 8e5c3b2 2025-08-07 added git delete_task fuctonalite
 - 90c3469 2025-08-07 created a readme.md file whit a description
 - 03c2655 2025-08-07 view task
