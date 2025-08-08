@@ -1,3 +1,9 @@
+- 70a5570 2025-08-07 add due date
+- 02fbf21 2025-08-07 v1.0
+- ce7f239 2025-08-07 Merge branch 'delete-task'
+- 36c401d 2025-08-07 created a conflict in main branch
+- 7a586da 2025-08-07 created a conflit
+- 7b7f19e 2025-08-07 added changelog.txt file
 - 8e5c3b2 2025-08-07 added git delete_task fuctonalite
 - 90c3469 2025-08-07 created a readme.md file whit a description
 - 03c2655 2025-08-07 view task
